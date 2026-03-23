@@ -71,7 +71,7 @@ export default function RecipeDetail(){
                     <img 
                         src={recipe.image}
                         alt={recipe.name}
-                        className="max-h-96 object-contain"
+                        className="max-h-96 object-contain rounded-2xl"
                     />
                 </div>
 
