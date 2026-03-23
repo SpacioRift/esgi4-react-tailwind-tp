@@ -41,7 +41,9 @@ export default function RecipesList() {
 
   return(
     <>
-        <SearchBar handleFilterData={handleFilterData}/>
+        <div className="m-2">
+            <SearchBar handleFilterData={handleFilterData}/>
+        </div>
         <div className="product-list flex flex-wrap p-4 bg-neutral-100 gap-2 h-[calc(100vh-40px)] overflow-y-auto" onScroll={onScroll}>
             {recipeList.map(recipe => <RecipeCard recipe={recipe} key={recipe.id} />)}
             {loading &&
